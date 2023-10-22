@@ -2,9 +2,63 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Bootstrap Grid</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 </head>
 <body>
+
+    <h1>
+        <center>Bootstrap Grid</center>
+    </h1>
+
+    <style media="screen">
+        .boxy{
+        background: #b3ddff;
+        border: 2px solid black
+        }
+
+    </style>
+
+<!--    <div class="container">-->
+<!--        <div class="row">-->
+<!--            &lt;!&ndash;  when screen is large the content inside div must take 4 of the available 12 columns  &ndash;&gt;-->
+<!--            <div class="col-lg-4 boxy">Col Large 4</div>-->
+<!--            <div class="col-lg-4 boxy">Col Large 4</div>-->
+<!--            <div class="col-lg-4 boxy">Col Large 4</div>-->
+<!--        </div>-->
+<!--    </div>-->
+
+
+<!--    <div class="container">-->
+<!--        <div class="row">-->
+<!--            &lt;!&ndash;  when screen is MEDIUM the content inside div must take 6 of the available 12 columns  &ndash;&gt;-->
+<!--            <div class="col-md-6 boxy">Col Medium 6</div>-->
+<!--            <div class="col-md-6 boxy">Col Medium 6</div>-->
+<!--        </div>-->
+<!--    </div>-->
+
+    <div class="container">
+        <div class="row">
+            <!--  when screen is LARGE the content inside div must take 3 of the available 12 columns
+             AND when screen is SMALL the content inside div must take 6 of tha available columns-->
+            <div class="col-lg-3 col-sm-6 boxy">ONE</div>
+            <div class="col-lg-3 col-sm-6 boxy">TWO</div>
+            <div class="col-lg-3 col-sm-6 boxy">THREE</div>
+            <div class="col-lg-3 col-sm-6 boxy">FOUR</div>
+        </div>
+    </div>
+
+<!--    <div class="row">-->
+<!--        <div class="col-lg-6boxy">-->
+<!--            <div class="row">-->
+<!--                <div class="col-lg-6 boxy">NEST ONE</div>-->
+<!--                <div class="col-lg-6 boxy">NEST TWO</div>-->
+<!--                <div class="col-lg-6 boxy">NEST THREE</div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+
+<!--    <div class="col-lg-6 boxy">TOP LEVEL</div>-->
 
 </body>
 </html>
