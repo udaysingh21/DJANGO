@@ -1,0 +1,32 @@
+body{
+font-family: "Gill Sans Extrabold", sans-serif;
+text-align: center;
+background-color:#0a0121;
+color: white;
+border: 50px solid #1af0c9;
+border-top: 0px; /* setting top-border : 0px */
+margin: 0px;
+}
+
+p{
+font-family: "Gill Sans Extrabold", sans-serif;
+padding-top: 57px;
+padding-left: 150px;
+padding-right: 150px;
+}
+
+
+form{
+font-size: 1.0em;
+margin-bottom: 20px;
+}
+
+#button{
+background-color: #ffef0a;
+height: 80px;
+width: 150px;
+margin: 4px;
+margin-top: 12px
+font-size: 1.5em;
+border-radius: 25px;
+}

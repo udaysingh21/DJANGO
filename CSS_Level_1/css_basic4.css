@@ -1,0 +1,15 @@
+/* selectortag{
+  propert:value;
+} */
+
+li{
+  color: red;
+}
+
+.topitems{
+  color: green;
+}
+
+#two{
+  color: blue;
+}

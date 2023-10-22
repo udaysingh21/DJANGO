@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML LABELS</title>
+  </head>
+  <body>
+
+    <form>
+      <p>Enter Text</p>
+      <!-- jo bhi input user dega wo userinput(name) ko assign ho jayega aur isi ke help se futre
+        me use ya reference kr skte hai-->
+      <input type="text" name="userinput" value="">
+      <input type="submit" name="" value="SUBMIT">
+    </form>
+
+
+    <!-- action jaise hi submit krenge waise hi git hub basically action me jo
+    kuch hoga wha lekr jayega-->
+    <form class="" action="https://github.com/" method="get">
+      <input type="text" name="nameinput" placeholder="This is a placehoder" required>
+      <input type="submit" name="" value="Submit">
+    </form>
+
+    <form>
+      <!-- using label individually -->
+      <label>Enter Text: <input type="text" name="" value="1"></label>
+      <br><label>Enter Text: <input type="text" name="" value="2"></label>
+
+      <!-- using label together for many blocks -->
+      <!-- an id is assigned to for="" and that same label is assigned to all
+        input which have same id.-->
+      <br><label for="userinput">Enter input: </label>
+      <br><input id="userinput"  type="text" name="" value="Hello">
+      <br><input id="userinpur" type="text" name="" value="Bye">
+
+    </form>
+
+  </body>
+</html>

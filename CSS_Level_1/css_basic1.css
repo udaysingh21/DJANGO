@@ -1,0 +1,24 @@
+/* This is a comment is CSS */
+/* selected tag{
+  property: value;
+} */
+
+h1{
+  /* color: blue; */
+  color: red;
+}
+
+li{
+  /* color: green; */
+  color: rgb(32, 252, 3);
+}
+
+p{
+  color: #03fcfc;
+}
+
+h4{
+  /* a in rgba is alpha which defines how transparent color is
+  0 most transparent and 1 most dark */
+  color: rgba(32, 252, 3, 0.9);
+}

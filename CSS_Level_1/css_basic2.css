@@ -1,0 +1,26 @@
+/* selcted tag{
+  property:value;
+} */
+
+body{
+  /* background-color: rgb(3, 252, 252); */
+  background: url(https://images.pexels.com/photos/674010/pexels-photo-674010.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500);
+  /* background-repeat: 100; */
+}
+
+div{
+  background: red;
+  border-color: black;
+  border-width: thin; /*can also used pixel*/
+  border-style: dotted;
+}
+
+p{
+  /* will be applied on all p outside and inside div */
+  color: rgb(252, 248, 3);
+}
+
+span{
+  background: blue;
+  color: black;
+}

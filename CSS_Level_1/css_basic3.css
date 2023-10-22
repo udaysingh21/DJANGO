@@ -1,0 +1,43 @@
+/* selector_tag{
+  property:value;
+} */
+
+div{
+  color:red;
+}
+
+/* class starts with dot and is not unique */
+.firstdiv{
+  color: blue;
+}
+
+#Singleid{
+  color: green;
+  text-decoration: line-through;
+}
+
+/* '*' is used for selecting  every element on HTML Page
+It will overwrite everything except id*/
+/* *{
+  color: #03fcd7;
+} */
+
+/* Json siblings
+This will be applied to any unordered list immediately next to h3.*/
+h3+ul{
+         /* border style color*/
+  border: 4px dotted purple;
+}
+
+/* Descendant Tags
+CSS will be appleid to all anchor tag inside list list */
+li a{
+  color: red;
+}
+
+/* This is how we access attributes */
+li a[href="https://www.google.com/"]{
+  color: blue;
+  border: 5px solid orange;
+  /* border style color*/
+}

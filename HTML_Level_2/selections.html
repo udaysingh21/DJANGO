@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>HOTEL FEEDBACK</title>
+  </head>
+  <body>
+    <h2>Hotel Feedback Form</h2>
+    <form  method="get">
+      <h3>Are you from India or outside India ?</h3>
+
+      <label for="india">India </label>
+      <input id="india" type="radio" name="country" value="India">
+
+      <!-- for linking multiple radio buttons give them same name,
+        if you anyone radio button gets selected then give all radiobuttons
+        same name.-->
+      <br><label for="outsde">Outside </label>
+      <input id="outside" type="radio" name="country" value="   ">
+
+      <h3>Please rate our service</h3>
+      <select name="stars">
+        <option value="Great">3</option>
+        <option value="okay">2</option>
+        <option value="bad">1</option>
+      </select>
+
+      <p>Any Feedback ? </p>
+      <textarea name="feedback" rows="8" cols="80"></textarea>
+      <br><input type="submit" name="" value="Submit">
+
+
+    </form>
+  </body>
+</html>

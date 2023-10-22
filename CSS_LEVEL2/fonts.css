@@ -1,0 +1,22 @@
+/*  selector tag{
+    property_name:value;
+}*/
+
+
+h1{
+ font-family: "Arial";
+}
+
+p {
+   font-family: 'XoloniumRegular';
+   font-weight: normal;
+   font-style: normal;
+}
+
+body{
+font-size: 20px;
+}
+
+h1{
+text-align: center;
+}
