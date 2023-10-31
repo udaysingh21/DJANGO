@@ -21,5 +21,6 @@ from firstapp import  views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('admin/', views.index,name="index"),
+    # from firstapp grab views and then from views grab index
+    # path('', views.index,name="index"),
 ]
