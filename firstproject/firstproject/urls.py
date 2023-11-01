@@ -17,10 +17,11 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from firstapp import  views
-
+from django.urls import include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     # from firstapp grab views and then from views grab index
-    path('', views.index,name="index"),
+    path('',views.index,name='index'),
+    path('firstapp/',include('firstapp.urls')),
 ]
