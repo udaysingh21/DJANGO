@@ -1,12 +1,16 @@
 <!DOCTYPE html>
+<!--Load Static Files - this line should be below doctype html always-->
+<!--Here static is a template tag library-->
+{% load static %}
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>First App</title>
+    <title>Django Digipodium Image</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
 </head>
 <body>
-    <h1>Hello, this is index.html</h1>
-    {{ insert_me }}
+    <h1>Hello, this is a logo of Digipodium 😎</h1>
+    <img src="{% static 'images/DIGIPODIUM.png' %}" alt="Digipodium Logo">
 
 </body>
 </html>
