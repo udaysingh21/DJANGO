@@ -5,12 +5,38 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Django Digipodium Image</title>
+    <title>Django MTV</title>
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
 </head>
 <body>
-    <h1>Hello, this is a logo of Digipodium 😎</h1>
-    <img src="{% static 'images/DIGIPODIUM.png' %}" alt="Digipodium Logo">
+
+    <h1>Hi!! Welcome to Django MTV</h1>
+    <h2>Here are your access records: </h2>
+
+    <div class="django2">
+        {% if access_records %}
+        <table>
+            <thead>
+                <th>Site Name</th>
+                <th>Date Accessed</th>
+            </thead>
+
+            {% for acc in access_records %}
+            <tr>
+                <td>
+                    {{ acc.name }}
+                </td>
+
+                <td>
+                    {{ acc.date }}
+                </td>
+            </tr>
+            {% endfor %}
+        {% else %}
+            <p>No access record found</p>
+        {% endif %}
+        </table>
+    </div>
 
 </body>
 </html>
