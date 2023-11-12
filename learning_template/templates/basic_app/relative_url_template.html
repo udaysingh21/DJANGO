@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>RELATIVE URL INFORMATION</title>
+</head>
+<body>
+<!--This page  will have all the information regarding relative url templates.-->
+<h1>Welcome to Relative URL Templates</h1>
+
+<!--<a href="basic_app/other.html">The Other Page</a>-->
+
+<!--This is the correct way to use relative url templates.-->
+<a href="{% url 'basic_app:other' %}">The Other Page</a>
+<!--admin application with index named view-->
+<!--You have to make migrations-->
+<a href="{% url 'admin:index' %}">Admin Page</a>
+<a href="{% url 'index' %}">Index Page</a>
+
+</body>
+</html>
