@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+{% extends 'basic_app/base.html' %}
+{% load static %}
+
+# POST method means that the data is sent in the body of the request
+
+{% block body_block %}
+
+<div class="container">
+  <div class="p-5 bg-primary text-white rounded">
+    {% if registered %}
+      <h1>Thank you for registering!</h1>
+      <a href="{% url 'basic_app:index' %}">Back to Home</a>
+    {% else %}
+      <h1>Register Here</h1>
+      <form class="form" method="POST" enctype="multipart/form-data">
+        {% csrf_token %}
+        {{ user_form.as_p }}
+        {{ profile_form.as_p }}
+        <input type="submit" name="" value="Register">
+      </form>
+    {% endif %}
+  </div>
+</div>
+
+{% endblock %}
