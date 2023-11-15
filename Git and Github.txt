@@ -1,0 +1,14 @@
+Git
+
+Git is a version control system that helps keep track of changes in your code
+
+The main idea is that you can have one repository with various historic checkpoints that you can always refer back to,
+with ha hisotry of any changes in version control.
+
+
+GitHub
+
+GitHub is  a company and website that helps manage git and host your files on their site.
+They offer extra tools for managing your code and collaborating with others.
+
+GitHub allows you to easily use git for version control and keep hosted copies of your code on web.
