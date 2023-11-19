@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+{% extends 'basic_app/basic_app.html' %}
+{% block body_block %}
+
+<div class="container mt-1">
+  <div class="p-5 bg-primary text-white rounded">
+    <h1>Welcome to School Detail Page</h1>
+    <h2>School Details:</h2>
+    <p>School Name: {{ school_detail.name }}</p>
+    <p>School Principal: {{ school_detail.principal }}</p>
+    <p>School Location: {{ school_detail.location }}</p>
+<!--      # School detail comes is a dictionary, so we can use the key to get the value-->
+<!--      # which comes from the view-->
+
+    <h3>Students:</h3>
+    {% for student in school_detail.students.all %}
+    <p>{{ student.name }} who is {{student.age}} years old. </p>
+    {% endfor %}
+
+
+  </div>
+</div>
+
+{% endblock %}

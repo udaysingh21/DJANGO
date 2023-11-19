@@ -25,5 +25,6 @@ urlpatterns = [
     path('',views.IndexView.as_view()), # this is for Template based view
     path('admin/', admin.site.urls),
     # path('basic_appp/',include('basic_app.urls')),
+    path('basic_app/',include('basic_app.urls')),
 
 ]
