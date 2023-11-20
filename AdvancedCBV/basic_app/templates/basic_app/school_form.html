@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+{% extends 'basic_app/basic_app.html' %}
+{% block body_block %}
+
+<h1>
+    <!--Check if the form has an instance, if it does not have an instance, then it is a new form-->
+    <!--Check if school exists, if it does not exist, then add it-->
+    {% if not form.instance.pk %}
+    Add School
+    {% else %}
+    Update School
+    {% endif %}
+
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <input type="submit" class="btn btn-primary" value="Submit">
+    </form>
+
+{% endblock %}
+
+</h1>

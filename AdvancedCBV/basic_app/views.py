@@ -26,8 +26,9 @@ class IndexView(TemplateView):
         context['injectme']='BASIC INJECTION'
         return context
 
-from django.views.generic import View,TemplateView,ListView,DetailView
+from django.views.generic import View,TemplateView,ListView,DetailView,CreateView,UpdateView,DeleteView
 from basic_app import models
+from django.urls import reverse_lazy
 
 class SchoolListView(ListView):
     context_object_name='schools'
@@ -41,3 +42,18 @@ class SchoolDetailView(DetailView):
     template_name='basic_app/school_detail.html'
     # you will be provided a list with every record in the School model
     # the default context name is school
+
+class SchoolCreateView(CreateView):
+    fields=('name','principal','location')
+    model=models.School
+    success_url = reverse_lazy('basic_app:schools')
+
+class SchoolUpdateView(UpdateView):
+    fields=('name','principal')
+    model=models.School
+    success_url=  reverse_lazy('basic_app:schools')
+
+class SchoolDeleteView(DeleteView):
+    model=models.School
+    success_url=reverse_lazy('basic_app:schools')
+

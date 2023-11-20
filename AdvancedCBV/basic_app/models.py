@@ -1,5 +1,5 @@
 from django.db import models
-
+from django.urls import reverse
 # Create your models here.
 
 class School(models.Model):
@@ -17,4 +17,8 @@ class Student(models.Model):
 
     def __str__(self):
         return self.name
+
+    # Instead of this i used reverse_lazy in views.py
+    # def get_absolute_url(self):
+    #     return reverse("basic_app:school_detail",kwargs={'pk':self.pk})
 
