@@ -17,9 +17,18 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path,include
 from AppTwo import views
+from django.conf import settings
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('',views.index,name="index"),
     path('apptwo_help/',include('AppTwo.urls')),
 ]
+
+if settings.DEBUG:
+    import debug_toolbar
+    # Concatenate the old urlpatterns with the new one that we have created
+    urlpatterns = [
+        path('__debug__/',include(debug_toolbar.urls)),
+    ] + urlpatterns
+
